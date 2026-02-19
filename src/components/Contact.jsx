@@ -11,8 +11,8 @@ const Contact = () => {
         setFormStatus('loading');
 
         const formData = new FormData(e.target);
-        // Integrated specific access key
-        formData.append("access_key", "d78cae31-8765-4cce-8874-663abf0b616c");
+        // Use environment variable for security
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {

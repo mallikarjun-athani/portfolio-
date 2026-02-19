@@ -27,12 +27,12 @@ export const portfolioData = {
         },
         {
             category: "Web Development",
-            items: ["HTML5", "CSS3", "Flexbox", "Grid", "Animations", "DOM", "ES6", "PHP CRUD"],
+            items: ["HTML5", "CSS3", "PHP CRUD", "Basic Javascript"],
             level: 80
         },
         {
             category: "Cloud & Tools",
-            items: ["AWS", "Git", "GitHub", "Jupyter Notebook", "MySQL", "VS Code"],
+            items: ["AWS", "Git", "GitHub", "MySQL", "VS Code", "Anitygravity"],
             level: 75
         }
     ],
@@ -52,27 +52,13 @@ export const portfolioData = {
         {
             title: "Portfolio Website",
             tech: ["React", "Vite", "Tailwind"],
-            features: ["Showcases skills", "projects", "certifications"]
+            features: ["Showcases skills", "projects", "certifications"],
+            liveLink: "https://mallu-portfolio.vercel.app"
         },
         {
             title: "Background Remove Tool",
             tech: ["HTML5 Canvas", "JavaScript"],
-            features: ["image processing"]
-        },
-        {
-            title: "AWS Cloud Solutions Project",
-            tech: ["AWS"],
-            features: ["Cloud-based data analytics architecture"]
-        },
-        {
-            title: "Power BI Dashboards",
-            tech: ["Power BI"],
-            features: ["Business insights visualization"]
-        },
-        {
-            title: "Python EDA Projects",
-            tech: ["Python"],
-            features: ["Data cleaning", "visualization", "automation"]
+            features: ["image processing"],
         }
     ],
 
