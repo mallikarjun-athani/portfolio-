@@ -32,7 +32,7 @@ export const portfolioData = {
         },
         {
             category: "Cloud & Tools",
-            items: ["AWS", "Git", "GitHub", "MySQL", "VS Code", "Anitygravity"],
+            items: ["AWS", "Git", "GitHub", "MySQL", "VS Code", "Antigravity"],
             level: 75
         }
     ],

@@ -10,6 +10,11 @@ A premium, modern portfolio website designed for a **Data Analyst & Full Stack D
 
   ## 😊 Live Demo :
   https://mallu-portfolio.vercel.app/
+
+  ## 🌟 Featured Projects :
+  - **MagicBG (AI Background Remover)**: [https://bg-remove.infinityfreeapp.com/](https://bg-remove.infinityfreeapp.com/)
+  - **Student Attendance System**: [https://student-attendance-management.infinityfreeapp.com/](https://student-attendance-management.infinityfreeapp.com/)
+  - **College Website**: [https://sves-college-website.vercel.app/](https://sves-college-website.vercel.app/)
   
 ## 🚀 Key Features
 
