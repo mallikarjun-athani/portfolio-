@@ -59,6 +59,7 @@ export const portfolioData = {
             title: "Background Remove Tool",
             tech: ["HTML5 Canvas", "JavaScript"],
             features: ["image processing"],
+            liveLink: "https://bg-remove.infinityfreeapp.com/"
         }
     ],
 
