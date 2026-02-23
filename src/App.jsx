@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, useScroll, AnimatePresence } from 'framer-motion';
+import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -35,16 +36,27 @@ function App() {
     }, [isLoading]);
 
     return (
-        <div className="min-h-screen bg-[#0f172a] text-slate-200 selection:bg-primary/30">
+        <div className="min-h-screen text-slate-200 selection:bg-primary/30 relative">
+            {/* Animated background layer */}
+            <AnimatedBackground />
+
             <AnimatePresence>
                 {isLoading && <Loader />}
             </AnimatePresence>
+
+            {/* Scroll progress bar */}
             <motion.div
-                className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-accent z-[100] origin-left"
-                style={{ scaleX: scrollYProgress }}
+                className="fixed top-0 left-0 right-0 h-[2px] z-[100] origin-left"
+                style={{
+                    scaleX: scrollYProgress,
+                    background: 'linear-gradient(90deg, #10b981, #06b6d4, #f59e0b, #10b981)',
+                    backgroundSize: '300% 100%',
+                }}
             />
+
             <Navbar />
-            <main>
+
+            <main className="relative z-10">
                 <Hero />
                 <About />
                 <Skills />
@@ -53,7 +65,8 @@ function App() {
                 <Education />
                 <Contact />
             </main>
-            <footer className="py-10 text-center border-t border-white/5 text-slate-500 text-sm">
+
+            <footer className="relative z-10 py-10 text-center border-t border-white/5 text-slate-500 text-sm">
                 &copy; {new Date().getFullYear()} Mallikarjun Athani. All rights reserved.
             </footer>
         </div>
