@@ -68,25 +68,25 @@ export const portfolioData = {
             title: "AWS Certified Professional",
             issuer: "AWS",
             icon: "Award",
-            link: "/src/assets/AWS-cer.jpg"
+            link: "/assets/AWS-cer.jpg"
         },
         {
             title: "AWS Solutions Architecture Job Simulation",
             issuer: "AWS",
             icon: "Cloud",
-            link: "/src/assets/AWS-Sol.jpg"
+            link: "/assets/AWS-Sol.jpg"
         },
         {
             title: "HackYugma Hackathon Participant",
             issuer: "JNNCE - YUGMA Techfest 1.0",
             icon: "Award",
-            link: "/src/assets/hackathon-cert.jpg"
+            link: "/assets/hackathon-cert.jpg"
         },
         {
             title: "SQL for Data Analysis",
             issuer: "Simplilearn SkillUp",
             icon: "Award",
-            link: "/src/assets/sql-cert.jpg"
+            link: "/assets/sql-cert.jpg"
         }
     ],
     education: [

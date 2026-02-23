@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import profilePhoto from '../assets/my photo.jpg';
-import resumeFile from '../assets/data analyst updated resume.pdf';
+const resumeFile = "/assets/data analyst updated resume.pdf";
 
 // Icon components for buttons
 const RocketIcon = () => (
@@ -41,19 +41,23 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="font-semibold tracking-widest uppercase mb-4"
-                        style={{ color: '#10b981' }}
+                        className="font-semibold tracking-widest uppercase mb-4 text-sm"
+                        style={{ color: '#a78bfa' }}
                     >
-                        Welcome to my portfolio
+                        ✦ Welcome to my portfolio
                     </motion.h2>
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+                        style={{ color: '#f1f5f9' }}
+                    >
                         I'm <span style={{
-                            background: 'linear-gradient(135deg, #10b981, #06b6d4, #f59e0b)',
+                            background: 'linear-gradient(135deg, #f472b6, #fb923c, #fbbf24)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                         }}>{portfolioData.hero.name}</span>
                     </h1>
-                    <p className="text-xl text-slate-400 mb-8 max-w-lg">
+                    <p className="text-lg md:text-xl mb-8 max-w-lg"
+                        style={{ color: '#94a3b8' }}
+                    >
                         {portfolioData.hero.title}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-8 md:mb-10">
@@ -63,10 +67,11 @@ const Hero = () => {
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.5 + i * 0.1 }}
-                                className="px-3 py-1 rounded-full text-sm text-slate-300"
+                                className="px-3 py-1 rounded-full text-sm"
                                 style={{
-                                    background: 'rgba(16, 185, 129, 0.08)',
-                                    border: '1px solid rgba(16, 185, 129, 0.15)',
+                                    color: '#c4b5fd',
+                                    background: 'rgba(167, 139, 250, 0.08)',
+                                    border: '1px solid rgba(167, 139, 250, 0.15)',
                                 }}
                             >
                                 {skill}
@@ -134,46 +139,21 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
-                {/* Right Photo — Creative design with rotating border & floating badges */}
+                {/* Right Photo — Square design with rotating border & floating badges */}
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                     className="relative flex justify-center items-center mt-6 md:mt-0"
                 >
-                    {/* Outer rotating gradient ring */}
-                    <div className="absolute w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] md:w-[420px] md:h-[420px] rounded-full"
-                        style={{
-                            background: 'conic-gradient(from 0deg, #10b981, #06b6d4, #f59e0b, #10b981)',
-                            animation: 'rotate-border 8s linear infinite',
-                            opacity: 0.6,
-                            filter: 'blur(2px)',
-                        }}
-                    />
-
-                    {/* Second counter-rotating ring */}
-                    <div className="absolute w-[290px] h-[290px] sm:w-[350px] sm:h-[350px] md:w-[430px] md:h-[430px] rounded-full"
-                        style={{
-                            border: '1px dashed rgba(16, 185, 129, 0.2)',
-                            animation: 'rotate-border 15s linear infinite reverse',
-                        }}
-                    />
-
-                    {/* Inner glow ring */}
-                    <div className="absolute w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[400px] md:h-[400px] rounded-full"
-                        style={{
-                            background: 'radial-gradient(circle, transparent 60%, rgba(16, 185, 129, 0.08) 100%)',
-                        }}
-                    />
-
-                    {/* Photo container */}
+                    {/* Photo container — SQUARE */}
                     <motion.div
                         whileHover={{ scale: 1.04 }}
                         transition={{ duration: 0.4 }}
-                        className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden z-10"
+                        className="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px] rounded-[1.8rem] overflow-hidden z-10"
                         style={{
                             border: '4px solid rgba(10, 15, 30, 0.9)',
-                            boxShadow: '0 0 40px rgba(16, 185, 129, 0.15), inset 0 0 30px rgba(0,0,0,0.3)',
+                            boxShadow: '0 0 50px rgba(167, 139, 250, 0.12), 0 0 80px rgba(16, 185, 129, 0.08), inset 0 0 30px rgba(0,0,0,0.3)',
                         }}
                     >
                         <img
@@ -184,95 +164,22 @@ const Hero = () => {
                         {/* Gradient overlay */}
                         <div className="absolute inset-0 pointer-events-none"
                             style={{
-                                background: 'linear-gradient(180deg, transparent 50%, rgba(10,15,30,0.5) 100%)',
+                                background: 'linear-gradient(180deg, transparent 40%, rgba(10,15,30,0.6) 100%)',
                             }}
                         />
                         {/* Top shine */}
                         <div className="absolute top-0 left-0 w-full h-1/3 pointer-events-none"
                             style={{
-                                background: 'linear-gradient(180deg, rgba(255,255,255,0.05) 0%, transparent 100%)',
+                                background: 'linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 100%)',
+                            }}
+                        />
+                        {/* Corner accent */}
+                        <div className="absolute top-0 right-0 w-12 h-12 pointer-events-none"
+                            style={{
+                                background: 'linear-gradient(225deg, rgba(244,114,182,0.15) 0%, transparent 60%)',
                             }}
                         />
                     </motion.div>
-
-                    {/* Floating tech badges around the photo */}
-                    <motion.div
-                        className="absolute z-20 px-3 py-1.5 rounded-full text-xs font-bold"
-                        style={{
-                            top: '5%',
-                            right: '5%',
-                            background: 'rgba(10, 15, 30, 0.85)',
-                            border: '1px solid rgba(16, 185, 129, 0.3)',
-                            color: '#10b981',
-                            backdropFilter: 'blur(10px)',
-                            animation: 'float-badge 3s ease-in-out infinite',
-                            boxShadow: '0 4px 15px rgba(16, 185, 129, 0.15)',
-                        }}
-                    >
-                        ⚡ SQL
-                    </motion.div>
-
-                    <motion.div
-                        className="absolute z-20 px-3 py-1.5 rounded-full text-xs font-bold"
-                        style={{
-                            bottom: '10%',
-                            right: '0%',
-                            background: 'rgba(10, 15, 30, 0.85)',
-                            border: '1px solid rgba(6, 182, 212, 0.3)',
-                            color: '#06b6d4',
-                            backdropFilter: 'blur(10px)',
-                            animation: 'float-badge 3.5s ease-in-out infinite 0.5s',
-                            boxShadow: '0 4px 15px rgba(6, 182, 212, 0.15)',
-                        }}
-                    >
-                        📊 Power BI
-                    </motion.div>
-
-                    <motion.div
-                        className="absolute z-20 px-3 py-1.5 rounded-full text-xs font-bold"
-                        style={{
-                            top: '15%',
-                            left: '-2%',
-                            background: 'rgba(10, 15, 30, 0.85)',
-                            border: '1px solid rgba(245, 158, 11, 0.3)',
-                            color: '#f59e0b',
-                            backdropFilter: 'blur(10px)',
-                            animation: 'float-badge 4s ease-in-out infinite 1s',
-                            boxShadow: '0 4px 15px rgba(245, 158, 11, 0.15)',
-                        }}
-                    >
-                        🐍 Python
-                    </motion.div>
-
-                    <motion.div
-                        className="absolute z-20 px-3 py-1.5 rounded-full text-xs font-bold"
-                        style={{
-                            bottom: '5%',
-                            left: '5%',
-                            background: 'rgba(10, 15, 30, 0.85)',
-                            border: '1px solid rgba(16, 185, 129, 0.3)',
-                            color: '#10b981',
-                            backdropFilter: 'blur(10px)',
-                            animation: 'float-badge 3.2s ease-in-out infinite 1.5s',
-                            boxShadow: '0 4px 15px rgba(16, 185, 129, 0.15)',
-                        }}
-                    >
-                        ☁️ AWS
-                    </motion.div>
-
-                    {/* Decorative dots */}
-                    <div className="absolute -top-2 left-1/2 w-2 h-2 rounded-full"
-                        style={{ background: '#10b981', boxShadow: '0 0 10px #10b981' }}
-                    />
-                    <div className="absolute -bottom-2 left-1/2 w-2 h-2 rounded-full"
-                        style={{ background: '#f59e0b', boxShadow: '0 0 10px #f59e0b' }}
-                    />
-                    <div className="absolute top-1/2 -left-2 w-2 h-2 rounded-full"
-                        style={{ background: '#06b6d4', boxShadow: '0 0 10px #06b6d4' }}
-                    />
-                    <div className="absolute top-1/2 -right-2 w-2 h-2 rounded-full"
-                        style={{ background: '#10b981', boxShadow: '0 0 10px #10b981' }}
-                    />
                 </motion.div>
             </div>
         </section>

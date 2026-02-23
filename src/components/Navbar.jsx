@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import resumeFile from '../assets/data analyst updated resume.pdf';
+const resumeFile = "/assets/data analyst updated resume.pdf";
 
 const navLinks = [
     { name: 'Home', href: '#', icon: '⌂', emoji: '🏠' },
