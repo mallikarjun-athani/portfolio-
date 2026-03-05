@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import profilePhoto from '../assets/my photo.jpg';
-const resumeFile = "/assets/data analyst updated resume.pdf";
+const resumeFile = "/assets/full-stack-malu-resume.pdf";
 
 // Icon components for buttons
 const RocketIcon = () => (

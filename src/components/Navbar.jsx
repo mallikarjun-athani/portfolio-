@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-const resumeFile = "/assets/data analyst updated resume.pdf";
+const resumeFile = "/assets/full-stack-malu-resume.pdf";
 
 const navLinks = [
     { name: 'Home', href: '#', icon: '⌂', emoji: '🏠' },
@@ -213,7 +213,7 @@ const Navbar = () => {
                             </span>
                             <span className="text-[10px] font-semibold uppercase tracking-[0.25em]"
                                 style={{ color: '#f59e0b' }}>
-                                Data Analyst
+                                Full Stack Developer
                             </span>
                         </div>
                     </motion.a>
@@ -342,7 +342,7 @@ const Navbar = () => {
                                         <div className="text-white font-bold text-lg leading-tight">Mallikarjun</div>
                                         <div className="text-xs font-semibold uppercase tracking-[0.2em] mt-0.5"
                                             style={{ color: '#f59e0b' }}>
-                                            Data Analyst
+                                            Full Stack Developer
                                         </div>
                                     </div>
                                 </div>

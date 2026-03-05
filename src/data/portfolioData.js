@@ -1,38 +1,38 @@
 export const portfolioData = {
     hero: {
         name: "Mallikarjun Athani",
-        title: "Data Analyst ",
-        skills: ["SQL", "Python", "Power BI", "AWS", "Web Development"],
+        title: "Full Stack Developer",
+        skills: ["PHP", "MySQL", "JavaScript", "Python", "Java"],
         photo: "my photo.jpg",
     },
     about: {
         description: [
-            "BCA Student – RCUB",
-            "Data Analyst with SQL, Python, Power BI",
-            "AWS Certified",
-            "Web Developer with HTML, CSS, JavaScript, PHP",
-            "Passion for data-driven solutions"
+            "Passionate and detail-oriented BCA student with hands-on experience in full stack web development.",
+            "Proficient in front-end technologies like HTML5, CSS3, and JavaScript, along with backend development using PHP and MySQL.",
+            "Strong foundation in programming languages such as C, Python, and Java with good understanding of OOP concepts.",
+            "Experienced in building responsive and dynamic web applications.",
+            "Seeking an entry-level Full Stack Developer role to contribute technical skills and grow in a professional IT environment."
         ]
     },
     skills: [
         {
-            category: "Data Analytics",
-            items: ["Power BI", "Excel", "Tableau", "EDA", "KPI Dashboards"],
-            level: 85
-        },
-        {
-            category: "Programming",
-            items: ["Python (Pandas, NumPy, Matplotlib, Seaborn)", "SQL", "C", "Java", "JavaScript"],
+            category: "Frontend Development",
+            items: ["HTML5", "CSS3", "JavaScript (ES6+)", "Responsive Web Design"],
             level: 90
         },
         {
-            category: "Web Development",
-            items: ["HTML5", "CSS3", "PHP CRUD", "Basic Javascript"],
+            category: "Backend & Database",
+            items: ["PHP", "MySQL", "Form Handling", "Session & Auth", "phpMyAdmin"],
+            level: 85
+        },
+        {
+            category: "Programming Languages",
+            items: ["C", "Python", "Java", "OOP Concepts"],
             level: 80
         },
         {
-            category: "Cloud & Tools",
-            items: ["AWS", "Git", "GitHub", "MySQL", "VS Code", "Antigravity"],
+            category: "Tools & Technologies",
+            items: ["VS Code", "Git & GitHub", "Netlify", "Eclipse", "IntelliJ IDEA"],
             level: 75
         }
     ],
@@ -105,11 +105,11 @@ export const portfolioData = {
         }
     ],
     competencies: [
-        "Statistical Analysis",
-        "EDA",
-        "Data Cleaning",
-        "Dashboard Development",
-        "Cloud Architecture",
+        "Full Stack Dev",
+        "Frontend Design",
+        "Backend Logic",
+        "Database Design",
+        "Responsive UI",
         "Problem Solving"
     ],
     contact: {
